@@ -1,62 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <title>Manual HTML</title>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <font face="Tahoma">
+    <h1> <font color="green"> Manual básico do HTML </font></h1>
+    <h2> <font color="brown"> Um guia para quem está começando</font></h2>
     <hr />
+    
+    <p>Se você está pensando em iniciar uma carreira como pessoa desenvolvedora front-end, sem dúvidas a primeira coisa que precisa aprender é a linguagem <abbr title="Linguagem de Marcação de HiperTexto">HTML</abbr>. Antes de tudo, saiba que HTML <u>não é</u> uma linguagem de programação, mas sim uma <strong><mark>linguagem de marcação de hipertexto</mark></strong>. Isso quer dizer que o HTML não é capaz de criar um software, mas apenas uma estrutura para sua página web. Segundo Fernanda Bernardo, da Trybe, </p>
+    <blockquote><i>"O HTML trabalha lado a lado com os navegadores da internet e os sistemas de mecanismos de busca. Depois que o código de uma página está pronto, o navegador interpreta as informações e renderiza o site visualmente de acordo com as instruções. Assim, a pessoa que acessa consegue visualizar as informações, disponíveis em forma de texto, formas, imagens e outros recursos."</i></blockquote>
+    <del>Podemos dizer que o HTML é o componente mais essencial de uma aplicação web. Com ele, é possível criar a estrutura, definir o posicionamento dos elementos, estruturar a divisão de uma página em blocos visuais e combinar texto, imagens e vídeos.</del>
+    <p>Mas há um detalhe importante: a linguagem HTML possui regras de sintaxe e palavras específicas que precisam ser utilizadas para que sua página funcione corretamente. E é justamente nisso que nosso manual vai te ajudar! Aqui você vai encontrar tudo que precisa pra criar suas primeiras páginas web e montar seu portfolio. Bora lá?</p>
+    
+    <h3 id="indice"><font color="green">Índice</font></h3>
+        <ol>
+            <li><a href="#primeiro-passo">Primeiro passo: entendendo a estrutura HTML</a></li>
+            <li><a href="#segundo-passo">Segundo passo: aprendendo o vocabulário HTML</a></li>
+            <li><a href="#terceiro-passo">Terceiro passo: montando uma página HTML</a></li>
+            <li><a href="#proximos-passos">Próximos passos: evoluindo seus conhecimentos</a></li>
+        </ol>
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <h3 id="primeiro-passo"><font color="green">Primeiro passo: entendendo a estrutura HTML</font></h3>
+    <small><a href="#indice">Voltar</a></small>
+    <p>Quando estiver montando sua página web com HTML, você irá utilizar alguns itens estruturais diferentes para que o navegador possa identificar e transformar o que você deseja em algo visual para o usuário. Vamos entender cada um deles a seguir.</p>
+    
+    <h4> <font color="brown">Tags</font> </h4>
+    <p>As tags são palavras específicas, que aparecem entre os símbolos "<" e ">" e indicam qual a função daquele trecho do seu código. Uma tag pode indicar, por exemplo:
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li>se o seu texto é um título, um parágrafo normal ou um link;</li>
+        <li>se o texto deve estar em negrito, itálico ou sublinhado;</li>
+        <li>se o arquivo é uma imagem, áudio ou vídeo;</li>
+        <li>se o bloco ed informações será um formulário, uma tabela ou uma lista de tópicos, como esta que você está lendo.</li>
+    </ul>
+    <p>Estes são apenas alguns exemplos do que uma tag HTML pode representar. No segundo passo deste manual, você irá aprender diversas tags muito utlizadas para a construção de páginas web.</p>
+    <p>Uma informação importante sobre as tags é que elas podem ser únicas ou ter uma tag de fechamento, dependendo do elemento que ela representa. A tag de parágrafo (&lt;p&gt;), por exemplo, precisa de uma tag de fechamento (&lt;/p&gt;)para indicar onde termina seu parágrafo. Já a tag de imagem (&lt;img&gt;) não precisa, pois é necessário apenas indicar a fonte da sua imagem.</p>
+
+    <h4> <font color="brown">Elementos</font></h4>
+    <p>Um elemento HTML nada mais é do que os itens presentes em sua página, ou seja, os textos, imagens, links, formulários, etc. Os elementos podem ser classificados de duas formas:</p>
+    <ul>
+        <li><mark>Elementos de bloco</mark>: são elementos que se separam dos demais, tanto verticalmente quanto horizontalmente, como um título ou uma tabela.</li>
+        <li><mark>Elementos inline</mark>: são elementos que ocupam apenas o espaço definido pelo próprio elemento, como um link, uma imagem ou um botão.</li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h4> <font color="brown">Atributos</font></h4>
+    <p>Os atributos aparecem dentro das tags HTML, dando a elas certas características e funcionalidades. Uma tag &lt;a&gt;, por exemplo, que é utilizada para links, possui o atributo "href", que irá definir qual o destino ao clicar naquele link.</p>
+    <p>Os atributos podem ser <strong>globais</strong>, quando funcionam da mesma forma para todas as tags, ou podem ser <strong>específicos</strong> de um certo elemento.</p>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h3 id="segundo-passo"><font color="green">Segundo passo: aprendendo o vocabulário HTML</font></h3>
+    <small><a href="#indice">Voltar</a></small>
+    <p>Agora que você já sabe os itens que constituem a estrutura de um código HTML, chegou a hora de aumentar seu vocabulário! A seguir, você verá as principais tags que usará para criar suas páginas web. </p>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <table style="border: 1px solid black">
+        <thead>
+            <tr>
+                <th colspan="2">Tags mais usadas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;section&gt;&lt;/section&gt;</td>
+                <td>Define seções, separando conteúdos como capítulos, artigos ou cabeçalhos.</td>
+            </tr>
+            <tr>
+                <td>&lt;div&gt;&lt;/div&gt;</td>
+                <td>Funciona como um contêiner e define um bloco inteiro de conteúdo, ajudando a organizar os elementos na página web.</td>
+            </tr>
+            <tr>
+                <td>&lt;h1&gt;&lt;/h1&gt;</td>
+                <td>Define um título no documento. Pode ir de h1 até h6.</td>
+            </tr>
+            <tr>
+                <td>&lt;p&gt;&lt;/p&gt;</td>
+                <td>Define um parágrafo.</td>
+            </tr>
+            <tr>
+                <td>&lt;b&gt;&lt;/b&gt;</td>
+                <td>Coloca em negrito o texto entre as tags.</td>
+            </tr>
+            <tr>
+                <td>&lt;u&gt;&lt;/u&gt;</td>
+                <td>Sublinha o texto entre as tags.</td>
+            </tr>
+            <tr>
+                <td>&lt;i&gt;&lt;/i&gt;</td>
+                <td>Coloca em itálico o texto entre as tags.</td>
+            </tr>
+            <tr>
+                <td>&lt;br&gt;&lt;/br&gt;</td>
+                <td>Quebra uma linha do texto.</td>
+            </tr>
+            <tr>
+                <td>&lt;a&gt;&lt;/a&gt;</td>
+                <td>Cria um link. Sempre acompanhada do atributo "href", que indica o destino do link.</td>
+            </tr>
+            <tr>
+                <td>&lt;nav&gt;&lt;/nav&gt;</td>
+                <td>Cria uma seção com um grupo de links. Muito utilizada para criar menus.</td>
+            </tr>
+            <tr>
+                <td>&lt;img&gt;</td>
+                <td>Permite inserir uma imagem na página.</td>
+            </tr>
+            <tr>
+                <td>&lt;audio&gt;</td>
+                <td>Permite inserir um áudio na página.</td>
+            </tr>
+            <tr>
+                <td>&lt;video&gt;</td>
+                <td>Permite inserir um vídeo na página.</td>
+            </tr>
+            <tr>
+                <td>&lt;ol&gt;&lt;/ol&gt;</td>
+                <td>Cria uma lista ordenada, ou seja, com números.</td>
+            </tr>
+            <tr>
+                <td>&lt;ul&gt;&lt;/ul&gt;</td>
+                <td>Cria uma lista não ordenada, ou seja, com marcadores.</td>
+            </tr>
+            <tr>
+                <td>&lt;table&gt;&lt;/table&gt;</td>
+                <td>Cria uma tabela. Dentro desta tag, serão utilizadas outras tags, que dividirão a tabela em cabeçalho (&lt;thead&gt;&lt;/thead&gt;), corpo (&lt;tbody&gt;&lt;/tbody&gt;) e rodapé (&lt;tfoot&gt;&lt;/tfoot&gt;). Dentro destas, ainda utilizamos as tags &lt;tr&gt;&lt;/tr&gt; para criar linhas, e dentro de cada linha a tag &lt;td&gt;&lt;/td&gt; para definir o conteúdo de cada célula.</td>
+            </tr>
+        </tbody>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    </table>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h3 id="terceiro-passo"><font color="green">Terceiro passo: montando uma página HTML</font></h3>
+    <small><a href="#indice">Voltar</a></small>
+    <p>Chegou a hora de montar nossa página web! Independentemente da página que você quiser criar, ela deverá ter alguns elementos que são padrão da linguagem. </p>
+    <img src="codigo-exemplo.png" style="border: 1px solid;">
+    <p>Vamos entender cada um dos elementos da imagem acima.</p>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+    <h4> <font color="brown">&lt;!DOCTYPE</font> <font color="red">html</font><font color="brown">&gt;</font></h4>
+    <p>Apesar dos símbolos de "< >", esta não é uma tag, mas sim uma declaração que informa ao navegador qual a versão do HTML utilizada no arquivo. A versão mais atual é a HTML5. </p>
+
+    <h4> <font color="brown">&lt;html&gt;</font></h4>
+    <p>Essa tag faz com que o navegador entenda que esse é um documento HTML. Todos os elementos da sua página devem ficar dentro desta tag, para que o navegador consiga interpretar o conteúdo corretamente. Dentro da tag &lt;html&gt;, o conteúdo será dividido entre o cabeçalho e o corpo.</p>
+
+    <h5> <font color="brown">&lt;head&gt;</font></h5>
+    <p>É o cabeçalho da sua página. Dentro desta tag, serão definidos os metadados da página, ou seja, as informações que geralmente não aparecem para o usuário final. </p>
+
+    <h6> <font color="brown">&lt;title&gt;</font></h6>
+    <p>Esta tag é usada para definir o título da página, que aparecerá no topo da janela, lá na aba do navegador. Ela fica sempre dentro da tag &lt;head&gt;.</p>
+    
+    <h6> <font color="brown">&lt;meta</font><font color="red"> charset</font><font color="brown">&gt;</font></h6>
+    <p>A tag meta é usada para definir as informações dos metadados. No caso do charset, é o que define a codificação que será usada na página. Toda vez que você fizer uma página e no lugar de acentos e alguns caracteres aparecem caracteres estranhos, você provavelmente está esquecendo de definir a codificação para UTF-8. </p>
+
+    <h5> <font color="brown">&lt;body&gt;</font></h5>
+    <p>Dentro dessa tag está todo o conteúdo do corpo da página, que é o que aparece para o usuário final, como os títulos, parágrafos, imagens, etc. </p>
+
+    <h3 id="proximos-passos"><font color="green">Próximos passos: evoluindo seus conhecimentos</font></h3>
+    <small><a href="#indice">Voltar</a></small>
+    <p>Parabéns! Você já deu seus primeiros passos rumo a uma carreira promissora. Mas a jornada está apenas começando... Trabalhar com programação é estar constantemente estudando e evoluindo, pois as tecnologias não param de ser atualizadas, e uma boa pessoa programadora sabe que não pode ficar pra trás. </p>
+    <p>Felizmente, a comunidade de TI é forte e ativa, e você pode encontrar todo tipo de informação que precisa na internet. Dando um google, você encontra diversos artigos, fóruns, vídeos e até códigos de exemplo para esclarecer suas dúvidas e ajudar a resolver problemas que encontrar no caminho.</p>
+    <p>Mas tome cuidado para não ficar 100% dependente disso! A diferença entre uma pessoa programadora iniciante e uma já consolidada na área é a sua capacidade de escrever códigos de maneira rápida e sucinta, e isso só acontece com muito estudo e dedicação.</p>
+    <p>A melhor forma de estudar é colocando a mão na massa. Crie suas próprias páginas, teste elementos diversos, e busque conhecer outras tecnologias importantes para a web, como  o CSS e o Javascript.</p>
+    <p>Pra te dar um empurrãozinho, dá uma olhada nestes links:</p>
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+        <li><a href="https://code.visualstudio.com/">VS Code</a>: Apesar de você poder usar até mesmo o bloco de notas para criar seus códigos HTML, o VS Code é uma mão na roda, pois é um software próprio pra isso, tornando seu trabalho muito mais simples. No youtube, você encontra diversos tutoriais sobre como baixar e usar. Super recomendo!</li>
+        <li><a href="https://codepen.io/">CodePen</a>: Se você quiser um editor online, então você precisa acessar o CodePen. Além de poder criar e testar trechos de código HTML (e também CSS e JavaScript), você pode compartilhar seus códigos e também acessar o código de outros programadores. É perfeito para aprender com outros colegas e fazer testes, pois já mostra o resultado do seu código na hora.</li>
+        <li><a href="https://www.w3schools.com/">W3 Schools</a>: O W3 Schools é um site educacional voltado ao aprendizado de tecnologias web, com tutoriais e referências bem completos e organizados.</li>
     </ul>
-
+    <p>Com tudo que você viu aqui, pode ter certeza que já está pronta(o) pra começar a aventura. Boa sorte!</p>
+   
+    </font>
 </body>
 </html>
